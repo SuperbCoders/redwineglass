@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CancelViewItem" customModule="Wine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass" translatesAutoresizingMaskIntoConstraints="NO" id="JiC-ux-baQ">
+                    <rect key="frame" x="24" y="24" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="6Ut-SA-evg"/>
+                        <constraint firstAttribute="width" constant="56" id="Wr3-uI-dJ9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhH-KH-dAW">
+                    <rect key="frame" x="96" y="31" width="279" height="25.5"/>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="21"/>
+                    <color key="textColor" red="0.25098039215686274" green="0.32549019607843138" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D8z-cg-siF">
+                    <rect key="frame" x="96" y="61.5" width="70" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jb-rd-6pB">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="20.5"/>
+                            <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                            <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-gX-JAV">
+                            <rect key="frame" x="39" y="0.0" width="31" height="20.5"/>
+                            <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                            <color key="textColor" red="0.25098039215686274" green="0.32549019607843138" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="9Yv-Xr-bPQ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QhH-KH-dAW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="31" id="0q2-Mi-tkg"/>
+                <constraint firstItem="JiC-ux-baQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="6YV-9u-JWk"/>
+                <constraint firstItem="D8z-cg-siF" firstAttribute="top" secondItem="QhH-KH-dAW" secondAttribute="bottom" constant="5" id="IKO-CW-5l9"/>
+                <constraint firstItem="D8z-cg-siF" firstAttribute="leading" secondItem="JiC-ux-baQ" secondAttribute="trailing" constant="16" id="Ymt-T2-5Iu"/>
+                <constraint firstItem="JiC-ux-baQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="mcC-td-5yN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QhH-KH-dAW" secondAttribute="trailing" id="rrS-mb-bXD"/>
+                <constraint firstItem="QhH-KH-dAW" firstAttribute="leading" secondItem="JiC-ux-baQ" secondAttribute="trailing" constant="16" id="vXh-87-Spi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="wineCount" destination="3VM-gX-JAV" id="XEL-VD-yeM"/>
+                <outlet property="wineDesc" destination="3jb-rd-6pB" id="3qo-41-yIe"/>
+                <outlet property="wineImage" destination="JiC-ux-baQ" id="IOs-9D-O58"/>
+                <outlet property="wineName" destination="QhH-KH-dAW" id="vnw-tG-Gbe"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="glass" width="42" height="42"/>
+    </resources>
+</document>
