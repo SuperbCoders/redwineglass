@@ -1,0 +1,78 @@
+/* 
+  Localizable.strings
+  Wine
+
+  Created by toxa on 5/25/19.
+  Copyright © 2019 gbsoftware. All rights reserved.
+*/
+
+"White Wine" = "White Wine";
+"Red Wine" = "Red Wine";
+"Rose Wine" = "Rose Wine";
+"Sparking Wine" = "Sparking Wine";
+"Else" = "Else";
+
+"White" = "White";
+"Red" = "Red";
+"Rose" = "Rose";
+"Sparking" = "Sparking";
+"Else" = "Else";
+
+"Young and tasty" = "Young and tasty";
+"The classics" = "The classics";
+"You know the thing" = "You know the thing";
+"Сongratulations!" = "Сongratulations!";
+"Do it your way" = "Do it your way";
+
+"Let’s Start" = "Let’s Start";
+"Mark the days when\nyou drink wine" = "Mark the days when\nyou drink wine";
+"Watch your habits and make\nconclusions" = "Watch your habits and make\nconclusions";
+
+"Calendar" = "Calendar";
+"Statistics" = "Statistics";
+"Settings" = "Settings";
+
+"I had a glass of" = "I had a glass of";
+
+"January" = "January";
+"February" = "February";
+"March" = "March";
+"April" = "April";
+"May" = "May";
+"June" = "June";
+"July" = "July";
+"August" = "August";
+"September" = "September";
+"October" = "October";
+"November" = "November";
+"December" = "December";
+
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Wed" = "Wed";
+"Thu" = "Thu";
+"Fri" = "Fri";
+"Sat" = "Sat";
+"Sun" = "Sun";
+
+"Statistics" = "Statistics";
+"Drunk on averange" = "Drunk on averange";
+"Drunk total" = "Drunk total";
+"The cost of drinking wine" = "The cost of drinking wine";
+"glass" = "glass";
+"glasses" = "glasses";
+"glasses daily" = "glasses daily";
+
+"Settings" = "Settings";
+"DOCUMENTATION" = "DOCUMENTATION";
+"Term of Use" = "Term of Use";
+"Privacy Policy" = "Privacy Policy";
+"COMMUNITY" = "COMMUNITY";
+"Visit Website" = "Visit Website";
+"Send Feedback" = "Send Feedback";
+"Delete all data" = "Delete all data";
+
+"Warning" = "Warning";
+"Are you sure delete all data?" = "Are you sure delete all data?";
+"Yes" = "Yes";
+"Cancel" = "Cancel";

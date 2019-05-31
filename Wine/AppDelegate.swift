@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        RouterDB.shared.initDefaults()
+        
+        if UserDefaults.standard.object(forKey: "alreadyStart") == nil {
+            loadStartVC()
+        }else{
+            loadMainVC()
+        }
+        
         return true
     }
 
@@ -39,6 +48,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    //MARK: action
+    
+    func loadStartVC(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "StartViewController")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func loadMainVC(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tbc = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tbc
+        self.window?.makeKeyAndVisible()
+        
     }
 
 
