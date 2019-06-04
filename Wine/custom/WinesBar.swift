@@ -36,7 +36,10 @@ class WinesBar: UIView {
     private func setupViews(){
         scrollView.frame = self.bounds
         scrollView.showsHorizontalScrollIndicator = false
-        self.addSubview(scrollView)
+        if scrollView.superview == nil {
+            self.addSubview(scrollView)
+        }
+        clearViews()
         
         var x:CGFloat = 16
         let y:CGFloat = 4
@@ -105,6 +108,12 @@ class WinesBar: UIView {
         parent.layer.shadowPath = UIBezierPath(rect: parent.bounds).cgPath
         parent.layer.shouldRasterize = true
         parent.layer.rasterizationScale = UIScreen.main.scale
+    }
+    
+    private func clearViews(){
+        scrollView.subviews.forEach { (v) in
+            v.removeFromSuperview()
+        }
     }
     
 }

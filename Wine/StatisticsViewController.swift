@@ -74,26 +74,40 @@ class StatisticsViewController: UIViewController {
 //        periodButton.setTitle(text, for: .normal)
         
         let items = RouterDB.shared.getWineItems(startDate: selectedPeriodDate.startOfMonth(), endDate: last)
-        let text = items.count == 1 ? "glass".localized() : "glasses".localized();
+        let text = glassesLocalizeCount(c: items.count) //items.count == 1 ? "glass".localized() : "glasses".localized();
         
         countlabel.text = "\(items.count) " + text
-        averageLabel.text = String(format: "%0.1f %@", Float(items.count) / Float(df.string(from: last))!, "glasses daily".localized())
+        averageLabel.text = String(format: "%d %@", Int(ceil(Float(items.count) / Float(df.string(from: last))!)), "glasses daily".localized())
         
         var s:Float = 0
         items.forEach { (w) in
             s += w.wineType.cost
         }
-        costLabel.text = "≈ \(s) $"
+        costLabel.text = "~ $\(s)"
         
         statsView.items = items
     }
+
+    private func glassesLocalizeCount(c:Int)->String{
+        if let locale = NSLocale.current.languageCode {
+            if !locale.lowercased().contains("ru") {
+                return c > 1 ? "glasses".localized() : "glass".localized()
+            }
+        }
+        let d = c % 10
+        if d == 0 { return "glasses".localized() }
+        if d == 1 { return "glass".localized() }
+        if d > 1 && d < 5 { return "glasses2".localized() }
+        if d > 4 { return "glasses".localized() }
+        return ""
+    }
     
     @objc func leftSwipeAction(_ sender: UISwipeGestureRecognizer){
-        prevMonthAction(UIButton())
+        nextMonthAction(UIButton())
     }
     
     @objc func rightSwipeAction(_ sender: UISwipeGestureRecognizer){
-        nextMonthAction(UIButton())
+        prevMonthAction(UIButton())
     }
     
     @IBAction func periodButtonAction(_ sender: Any) {

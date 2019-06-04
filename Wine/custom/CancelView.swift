@@ -47,7 +47,7 @@ class CancelView: UIView, NibLoadable {
             if temp[item] != nil {
                 let cancelViewItem = CancelViewItem.loadFromNib()
                 cancelViewItem.frame = CGRect(x: 0, y: y, width: size.width, height: size.height)
-                cancelViewItem.wineDesc.text = "Drunk wine"
+                cancelViewItem.wineDesc.text = "Drunk wine".localized()
                 cancelViewItem.wineName.text = item.name
                 cancelViewItem.wineCount.text = "\( temp[item]! )"
                 cancelViewItem.wineImage.image = item.imageBG
@@ -63,7 +63,7 @@ class CancelView: UIView, NibLoadable {
         }
         
         contentView.bringSubviewToFront(deleteButton)
-        
+        deleteButton.setTitle("Delete".localized(), for: .normal)
     }
     
     func showCancelView(parent:UIView){

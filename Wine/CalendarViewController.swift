@@ -56,11 +56,11 @@ class CalendarViewController: UIViewController {
     }
     
     @objc func leftSwipeAction(_ sender: UISwipeGestureRecognizer){
-        prevMonthAction(UIButton())
+        nextMonthAction(UIButton())
     }
     
     @objc func rightSwipeAction(_ sender: UISwipeGestureRecognizer){
-        nextMonthAction(UIButton())
+        prevMonthAction(UIButton())
     }
     
     @IBAction func prevMonthAction(_ sender: Any) {

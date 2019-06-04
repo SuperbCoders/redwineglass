@@ -62,7 +62,7 @@ class CalendarView: UIView/*, UICollectionViewDelegate, UICollectionViewDataSour
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        xibSetup()
+//        xibSetup()
         contentView?.prepareForInterfaceBuilder()
     }
     
@@ -79,6 +79,8 @@ class CalendarView: UIView/*, UICollectionViewDelegate, UICollectionViewDataSour
         var first = currentDate.startOfMonth()
         let end = currentDate.endOfMonth()
         
+        let dif = calendar.firstWeekday == 2 ? 1 : 0
+       
         if let d = calendar.date(byAdding: .day, value: -1, to: first) {
             first = d//.startOfMonth()
         }
@@ -88,7 +90,7 @@ class CalendarView: UIView/*, UICollectionViewDelegate, UICollectionViewDataSour
         var cur = first
         while cur < end {
             let today = calendar.startOfDay(for: cur)
-            let dayOfWeek = calendar.component(.weekday, from: today) - calendar.firstWeekday //calendar.component(.weekday, from: today) - 1
+            let dayOfWeek = calendar.component(.weekday, from: today) - dif
             let weekdays = calendar.range(of: .weekday, in: .weekOfYear, for: today)!
 //            print(dayOfWeek, weekdays.lowerBound, weekdays.upperBound)
             let days = (weekdays.lowerBound ..< weekdays.upperBound).compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: today) }

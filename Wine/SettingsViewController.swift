@@ -39,10 +39,10 @@ class SettingsViewController: UIViewController {
         self.view.insertSubview(custom, at: 0)
         
         titleLabel.text = "Settings".localized()
-        docLabel.text = "DOCUMENTATION".localized()
+        docLabel.text = "DOCUMENTATION".localized().uppercased()
         termsLabel.text = "Term of Use".localized()
         policyLabel.text = "Privacy Policy".localized()
-        comLabel.text = "COMMUNITY".localized()
+        comLabel.text = "COMMUNITY".localized().uppercased()
         visitLabel.text = "Visit Website".localized()
         sendLabel.text = "Send Feedback".localized()
         deleteLabel.text = "Delete all data".localized()
@@ -73,13 +73,22 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func termsAction(_ sender: Any) {
-        guard let url = URL(string: termsUrl) else { return }
-        UIApplication.shared.open(url)
+//        guard let url = URL(string: termsUrl) else { return }
+//        UIApplication.shared.open(url)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TermsPolicyViewController") as! TermsPolicyViewController
+        vc.isTerms = true
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
     @IBAction func policyAction(_ sender: Any) {
-        guard let url = URL(string: policyUrl) else { return }
-        UIApplication.shared.open(url)
+//        guard let url = URL(string: policyUrl) else { return }
+//        UIApplication.shared.open(url)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TermsPolicyViewController") as! TermsPolicyViewController
+        vc.isTerms = false
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func visitAction(_ sender: Any) {

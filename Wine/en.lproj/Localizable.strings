@@ -8,25 +8,25 @@
 
 "White Wine" = "White Wine";
 "Red Wine" = "Red Wine";
-"Rose Wine" = "Rose Wine";
-"Sparking Wine" = "Sparking Wine";
-"Else" = "Else";
+"Rose Wine" = "Rosé";
+"Sparking Wine" = "Sparkling";
+"Else" = "Other";
 
 "White" = "White";
 "Red" = "Red";
-"Rose" = "Rose";
-"Sparking" = "Sparking";
-"Else" = "Else";
+"Rose" = "Rosé";
+"Sparking" = "Sparkling";
+//"Else" = "Other";
 
 "Young and tasty" = "Young and tasty";
 "The classics" = "The classics";
-"You know the thing" = "You know the thing";
-"Сongratulations!" = "Сongratulations!";
-"Do it your way" = "Do it your way";
+"You know the thing" = "Great choice";
+"Сongratulations!" = "Congratulations!";
+"Do it your way" = "Cheers!";
 
 "Let’s Start" = "Let’s Start";
-"Mark the days when\nyou drink wine" = "Mark the days when\nyou drink wine";
-"Watch your habits and make\nconclusions" = "Watch your habits and make\nconclusions";
+"Mark the days when\nyou drink wine" = "Note the days when\nyou drink wine";
+"Watch your habits and make\nconclusions" = "Look over your wine\ndrinking and draw\nconclusions";
 
 "Calendar" = "Calendar";
 "Statistics" = "Statistics";
@@ -56,11 +56,12 @@
 "Sun" = "Sun";
 
 "Statistics" = "Statistics";
-"Drunk on averange" = "Drunk on averange";
-"Drunk total" = "Drunk total";
+"Drunk on averange" = "Average consumption";
+"Drunk total" = "Total consumption";
 "The cost of drinking wine" = "The cost of drinking wine";
 "glass" = "glass";
 "glasses" = "glasses";
+"glasses2" = "glasses";
 "glasses daily" = "glasses daily";
 
 "Settings" = "Settings";
@@ -73,6 +74,85 @@
 "Delete all data" = "Delete all data";
 
 "Warning" = "Warning";
-"Are you sure delete all data?" = "Are you sure delete all data?";
-"Yes" = "Yes";
+"Are you sure delete all data?" = "Are you sure to delete all data?";
+"Yes" = "Delete";
 "Cancel" = "Cancel";
+"Delete" = "Delete";
+
+"Drunk wine" = "Glasses";
+
+
+//"White Wine" = "Белое вино";
+//"Red Wine" = "Красное вино";
+//"Rose Wine" = "Розовое";
+//"Sparking Wine" = "Игристое";
+//"Else" = "Другое";
+//
+//"White" = "Белое";
+//"Red" = "Красное";
+//"Rose" = "Розовое";
+//"Sparking" = "Игристое";
+//"Else" = "Другое";
+//
+//"Young and tasty" = "Молодое и вкусное";
+//"The classics" = "Классика";
+//"You know the thing" = "Отличный выбор";
+//"Сongratulations!" = "Наши поздравления!";
+//"Do it your way" = "Делайте, как нравится";
+//
+//"Let’s Start" = "Начать";
+//"Mark the days when\nyou drink wine" = "Отмечайте дни,\nкогда выпивали";
+//"Watch your habits and make\nconclusions" = "Следите насколько сильна\nваша любовь к вину\nи делайте выводы";
+//
+//"Calendar" = "Календарь";
+//"Statistics" = "Статистика";
+//"Settings" = "Настройки";
+//
+//"I had a glass of" = "В моем бокале было";
+//
+//"January" = "Январь";
+//"February" = "Февраль";
+//"March" = "Март";
+//"April" = "Апрель";
+//"May" = "Май";
+//"June" = "Июнь";
+//"July" = "Июль";
+//"August" = "Август";
+//"September" = "Сентябрь";
+//"October" = "Октябрь";
+//"November" = "Ноябрь";
+//"December" = "Декабрь";
+//
+//"Mon" = "ПН";
+//"Tue" = "ВТ";
+//"Wed" = "СР";
+//"Thu" = "ЧТ";
+//"Fri" = "ПТ";
+//"Sat" = "СБ";
+//"Sun" = "ВС";
+//
+//"Statistics" = "Статистика";
+//"Drunk on averange" = "В среднем вы выпиваете";
+//"Drunk total" = "Всего выпито";
+//"The cost of drinking wine" = "Стоимость выпитого вина";
+//"glass" = "бокал";
+//"glasses" = "бокалов";
+//"glasses2" = "бокала";
+//"glasses daily" = "бокалов в день";
+//
+//"Settings" = "Настройки";
+//"DOCUMENTATION" = "Информация";
+//"Term of Use" = "Условия использования";
+//"Privacy Policy" = "Политика конфиденциальности";
+//"COMMUNITY" = "Обратная связь";
+//"Visit Website" = "Посетить сайт";
+//"Send Feedback" = "Отправить отзыв";
+//"Delete all data" = "Удалить все данные";
+//
+//"Warning" = "Внимание!";
+//"Are you sure delete all data?" = "Вы уверены, что хотите удалить все данные?";
+//"Yes" = "Удалить";
+//"Cancel" = "Отмена";
+//"Delete" = "Удалить";
+//
+//"Drunk wine" = "Бокалов выпито";

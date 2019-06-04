@@ -32,6 +32,9 @@
 		8E407C402278CB750023365E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E407C3F2278CB750023365E /* SettingsViewController.swift */; };
 		8E407C422278CFB50023365E /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E407C412278CFB50023365E /* CalendarView.swift */; };
 		8E437691227981EC00E8AB1C /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E437690227981EC00E8AB1C /* SF-Pro-Text-Light.otf */; };
+		8E9CEE3B22A4560A000151BA /* TermsPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CEE3A22A4560A000151BA /* TermsPolicyViewController.swift */; };
+		8E9CEE3E22A456D1000151BA /* terms_and_conditions.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CEE3C22A456D0000151BA /* terms_and_conditions.md */; };
+		8E9CEE3F22A456D1000151BA /* privacy_policy.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CEE3D22A456D1000151BA /* privacy_policy.md */; };
 		8ED0364E227A25340000D127 /* WinesBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0364D227A25340000D127 /* WinesBar.swift */; };
 		8EEF38D1228467A000C01820 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF38D0228467A000C01820 /* SF-Pro-Text-Bold.otf */; };
 		8EEF38D322847EF800C01820 /* CancelViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF38D222847EF800C01820 /* CancelViewItem.xib */; };
@@ -68,6 +71,9 @@
 		8E407C3F2278CB750023365E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8E407C412278CFB50023365E /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8E437690227981EC00E8AB1C /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		8E9CEE3A22A4560A000151BA /* TermsPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPolicyViewController.swift; sourceTree = "<group>"; };
+		8E9CEE3C22A456D0000151BA /* terms_and_conditions.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = terms_and_conditions.md; sourceTree = "<group>"; };
+		8E9CEE3D22A456D1000151BA /* privacy_policy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = privacy_policy.md; sourceTree = "<group>"; };
 		8ED0364D227A25340000D127 /* WinesBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinesBar.swift; sourceTree = "<group>"; };
 		8EEF38D0228467A000C01820 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		8EEF38D222847EF800C01820 /* CancelViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelViewItem.xib; sourceTree = "<group>"; };
@@ -114,7 +120,10 @@
 				8E407C3B2278CB100023365E /* CalendarViewController.swift */,
 				8E407C3D2278CB540023365E /* StatisticsViewController.swift */,
 				8E407C3F2278CB750023365E /* SettingsViewController.swift */,
+				8E9CEE3A22A4560A000151BA /* TermsPolicyViewController.swift */,
 				8E2A47E1227DD77D00EBBEE7 /* Model.swift */,
+				8E9CEE3D22A456D1000151BA /* privacy_policy.md */,
+				8E9CEE3C22A456D0000151BA /* terms_and_conditions.md */,
 				8E407C452278D1800023365E /* custom */,
 				8E407C3A2278CA640023365E /* help */,
 				8E407C2B2278BF110023365E /* fonts */,
@@ -227,6 +236,7 @@
 				8E2A47E6227DE68C00EBBEE7 /* CancelView.xib in Resources */,
 				8EEF38D1228467A000C01820 /* SF-Pro-Text-Bold.otf in Resources */,
 				8E407C222278BB2C0023365E /* LaunchScreen.storyboard in Resources */,
+				8E9CEE3F22A456D1000151BA /* privacy_policy.md in Resources */,
 				8E407C1F2278BB2C0023365E /* Assets.xcassets in Resources */,
 				8E437691227981EC00E8AB1C /* SF-Pro-Text-Light.otf in Resources */,
 				8E407C2A2278BF0B0023365E /* SF-Pro-Display-Bold.otf in Resources */,
@@ -235,6 +245,7 @@
 				8EEF38D322847EF800C01820 /* CancelViewItem.xib in Resources */,
 				8E22C0852299726400B45339 /* Localizable.strings in Resources */,
 				8E407C2D2278BF3B0023365E /* SF-Pro-Display-Regular.otf in Resources */,
+				8E9CEE3E22A456D1000151BA /* terms_and_conditions.md in Resources */,
 				8E407C1D2278BB290023365E /* Main.storyboard in Resources */,
 				8EEF38D7228480D700C01820 /* SF-Pro-Text-Medium.otf in Resources */,
 				8E407C312278C0D70023365E /* SF-Pro-Text-Regular.otf in Resources */,
@@ -252,6 +263,7 @@
 				8E407C352278C4970023365E /* TabBarController.swift in Sources */,
 				8E15311E227B7A9E00AD5EAD /* PeriodPicker.swift in Sources */,
 				8E407C182278BB290023365E /* AppDelegate.swift in Sources */,
+				8E9CEE3B22A4560A000151BA /* TermsPolicyViewController.swift in Sources */,
 				8E2A47E4227DE68300EBBEE7 /* CancelView.swift in Sources */,
 				8E407C392278CA470023365E /* Functions.swift in Sources */,
 				8E407C422278CFB50023365E /* CalendarView.swift in Sources */,

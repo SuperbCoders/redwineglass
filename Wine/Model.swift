@@ -48,11 +48,11 @@ enum WineType: Int {
     
     var cost : Float {
         switch self {
-        case .white:    return 1000.0
-        case .red:      return 1100.0
-        case .rose:     return 1200.0
-        case .sparking: return 1300.0
-        case .elsee:    return 1400.0
+        case .white:    return 10.0
+        case .red:      return 12.0
+        case .rose:     return 12.0
+        case .sparking: return 15.0
+        case .elsee:    return 12.0
         }
     }
     

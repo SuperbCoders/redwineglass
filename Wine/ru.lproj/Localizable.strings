@@ -6,73 +6,77 @@
   Copyright © 2019 gbsoftware. All rights reserved.
 */
 
-"White Wine" = "White Wine";
-"Red Wine" = "Red Wine";
-"Rose Wine" = "Rose Wine";
-"Sparking Wine" = "Sparking Wine";
-"Else" = "Else";
+"White Wine" = "Белое вино";
+"Red Wine" = "Красное вино";
+"Rose Wine" = "Розовое";
+"Sparking Wine" = "Игристое";
+"Else" = "Что-то еще";
 
-"White" = "White";
-"Red" = "Red";
-"Rose" = "Rose";
-"Sparking" = "Sparking";
-"Else" = "Else";
+"White" = "Белое";
+"Red" = "Красное";
+"Rose" = "Розовое";
+"Sparking" = "Игристое";
+//"Else" = "Что-то еще";
 
-"Young and tasty" = "Young and tasty";
-"The classics" = "The classics";
-"You know the thing" = "You know the thing";
-"Сongratulations!" = "Сongratulations!";
-"Do it your way" = "Do it your way";
+"Young and tasty" = "Молодое и вкусное";
+"The classics" = "Классика";
+"You know the thing" = "Отличный выбор";
+"Сongratulations!" = "Наши поздравления!";
+"Do it your way" = "Коктейли, шоты, сидр";
 
-"Let’s Start" = "Let’s Start";
-"Mark the days when\nyou drink wine" = "Mark the days when\nyou drink wine";
-"Watch your habits and make\nconclusions" = "Watch your habits and make\nconclusions";
+"Let’s Start" = "Начать";
+"Mark the days when\nyou drink wine" = "Отмечайте каждый\nвыпитый бокал";
+"Watch your habits and make\nconclusions" = "Следите насколько сильна\nваша любовь к вину\nи делайте выводы";
 
-"Calendar" = "Calendar";
-"Statistics" = "Statistics";
-"Settings" = "Settings";
+"Calendar" = "Календарь";
+"Statistics" = "Статистика";
+"Settings" = "Настройки";
 
-"I had a glass of" = "I had a glass of";
+"I had a glass of" = "В моем бокале было:";
 
-"January" = "January";
-"February" = "February";
-"March" = "March";
-"April" = "April";
-"May" = "May";
-"June" = "June";
-"July" = "July";
-"August" = "August";
-"September" = "September";
-"October" = "October";
-"November" = "November";
-"December" = "December";
+"January" = "Январь";
+"February" = "Февраль";
+"March" = "Март";
+"April" = "Апрель";
+"May" = "Май";
+"June" = "Июнь";
+"July" = "Июль";
+"August" = "Август";
+"September" = "Сентябрь";
+"October" = "Октябрь";
+"November" = "Ноябрь";
+"December" = "Декабрь";
 
-"Mon" = "Mon";
-"Tue" = "Tue";
-"Wed" = "Wed";
-"Thu" = "Thu";
-"Fri" = "Fri";
-"Sat" = "Sat";
-"Sun" = "Sun";
+"Mon" = "ПН";
+"Tue" = "ВТ";
+"Wed" = "СР";
+"Thu" = "ЧТ";
+"Fri" = "ПТ";
+"Sat" = "СБ";
+"Sun" = "ВС";
 
-"Statistics" = "Statistics";
-"Drunk on averange" = "Drunk on averange";
-"Drunk total" = "Drunk total";
-"The cost of drinking wine" = "The cost of drinking wine";
-"glass" = "glass";
-"glasses" = "glasses";
-"glasses daily" = "glasses daily";
+"Statistics" = "Статистика";
+"Drunk on averange" = "В среднем вы выпиваете";
+"Drunk total" = "Всего выпито";
+"The cost of drinking wine" = "Стоимость выпитого вина";
+"glass" = "бокал";
+"glasses" = "бокалов";
+"glasses2" = "бокала";
+"glasses daily" = "бокалов в день";
 
-"Settings" = "Settings";
-"DOCUMENTATION" = "DOCUMENTATION";
-"Term of Use" = "Term of Use";
-"Privacy Policy" = "Privacy Policy";
-"COMMUNITY" = "COMMUNITY";
-"Visit Website" = "Visit Website";
-"Send Feedback" = "Send Feedback";
-"Delete all data" = "Delete all data";
+"Settings" = "Настройки";
+"DOCUMENTATION" = "Информация";
+"Term of Use" = "Условия использования";
+"Privacy Policy" = "Политика конфиденциальности";
+"COMMUNITY" = "Обратная связь";
+"Visit Website" = "Посетить сайт";
+"Send Feedback" = "Отправить отзыв";
+"Delete all data" = "Удалить все данные";
 
-"Warning" = "Warning";
-"Are you sure delete all data?" = "Are you sure delete all data?";
-"Yes" = "Yes";
-"Cancel" = "Cancel";
+"Warning" = "Внимание!";
+"Are you sure delete all data?" = "Вы уверены, что хотите удалить все данные?";
+"Yes" = "Удалить";
+"Cancel" = "Отмена";
+"Delete" = "Удалить";
+
+"Drunk wine" = "Бокалов выпито";
