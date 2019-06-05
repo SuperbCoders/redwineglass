@@ -77,13 +77,13 @@ class StatisticsViewController: UIViewController {
         let text = glassesLocalizeCount(c: items.count) //items.count == 1 ? "glass".localized() : "glasses".localized();
         
         countlabel.text = "\(items.count) " + text
-        averageLabel.text = String(format: "%d %@", Int(ceil(Float(items.count) / Float(df.string(from: last))!)), "glasses daily".localized())
+        averageLabel.text = String(format: "%0.2f %@", Float(items.count) / Float(df.string(from: last))!, "glasses daily".localized())
         
         var s:Float = 0
         items.forEach { (w) in
             s += w.wineType.cost
         }
-        costLabel.text = "~ $\(s)"
+        costLabel.text = "~ $\(Int(s))"
         
         statsView.items = items
     }
