@@ -40,9 +40,11 @@
 		8EEF38D322847EF800C01820 /* CancelViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF38D222847EF800C01820 /* CancelViewItem.xib */; };
 		8EEF38D522847F0900C01820 /* CancelViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF38D422847F0900C01820 /* CancelViewItem.swift */; };
 		8EEF38D7228480D700C01820 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF38D6228480D700C01820 /* SF-Pro-Text-Medium.otf */; };
+		B8207C3EEF6A584D02AFC06F /* Pods_Wine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C9E80AA33E60C4BFE1902 /* Pods_Wine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46BA7016A6B9F67960CE927B /* Pods-Wine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wine.release.xcconfig"; path = "Target Support Files/Pods-Wine/Pods-Wine.release.xcconfig"; sourceTree = "<group>"; };
 		8E15311B227B60D200AD5EAD /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		8E15311D227B7A9E00AD5EAD /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		8E15311F227B7AFE00AD5EAD /* PeriodPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodPicker.xib; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		8EEF38D222847EF800C01820 /* CancelViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelViewItem.xib; sourceTree = "<group>"; };
 		8EEF38D422847F0900C01820 /* CancelViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelViewItem.swift; sourceTree = "<group>"; };
 		8EEF38D6228480D700C01820 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		9205392F149D953F89CF9309 /* Pods-Wine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wine.debug.xcconfig"; path = "Target Support Files/Pods-Wine/Pods-Wine.debug.xcconfig"; sourceTree = "<group>"; };
+		945C9E80AA33E60C4BFE1902 /* Pods_Wine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8207C3EEF6A584D02AFC06F /* Pods_Wine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A64CAA8D70C0818524DE49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				945C9E80AA33E60C4BFE1902 /* Pods_Wine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D87D00FBD5B36E2F0140B7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9205392F149D953F89CF9309 /* Pods-Wine.debug.xcconfig */,
+				46BA7016A6B9F67960CE927B /* Pods-Wine.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E407C0B2278BB290023365E = {
 			isa = PBXGroup;
 			children = (
 				8E407C162278BB290023365E /* Wine */,
 				8E407C152278BB290023365E /* Products */,
+				8D87D00FBD5B36E2F0140B7F /* Pods */,
+				8A64CAA8D70C0818524DE49F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E407C262278BB2C0023365E /* Build configuration list for PBXNativeTarget "Wine" */;
 			buildPhases = (
+				470E91EB6E256D273DF6B703 /* [CP] Check Pods Manifest.lock */,
 				8E407C102278BB290023365E /* Sources */,
 				8E407C112278BB290023365E /* Frameworks */,
 				8E407C122278BB290023365E /* Resources */,
+				028AC7A838454E6110E39191 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028AC7A838454E6110E39191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wine/Pods-Wine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wine/Pods-Wine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470E91EB6E256D273DF6B703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E407C102278BB290023365E /* Sources */ = {
@@ -429,6 +506,7 @@
 		};
 		8E407C272278BB2C0023365E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9205392F149D953F89CF9309 /* Pods-Wine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +526,7 @@
 		};
 		8E407C282278BB2C0023365E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BA7016A6B9F67960CE927B /* Pods-Wine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

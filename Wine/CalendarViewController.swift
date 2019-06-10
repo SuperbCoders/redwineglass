@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FacebookCore
+import FBSDKCoreKit
 
 class CalendarViewController: UIViewController {
 
@@ -130,6 +132,14 @@ extension CalendarViewController: WinesBarDelegate {
         
         let wineObj = WineRecordItem(dateString: date.toString(format: RouterDB.dbDateFormat), date: date, wineType: WineType(rawValue: index)!)
         RouterDB.shared.addItem(item: wineObj)
+        
+        let wineName = WineType(rawValue: index)!.shotName
+        let wineCost = WineType(rawValue: index)!.cost
+        let params : AppEvent.ParametersDictionary = [
+            AppEventParameterName(rawValue: wineName)! : wineName
+        ]
+        let event = AppEvent(name: "add_note", parameters: params, valueToSum: Double(wineCost))
+        AppEventsLogger.log(event)
         
         let y:CGFloat = wineBarView.frame.origin.y -  50
         showToast(message: "Add \( WineType(rawValue: index)?.name ?? "" )", duration: 3.0, y: y)
